@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form id="form1">
+      <ul class="form-style-1">
+        <li>
+          <label>Full Name <span class="required">*</span></label
+          ><input
+            type="text"
+            name="first"
+            class="field-divided"
+            placeholder="First"
+          />
+          <input
+            type="text"
+            name="last"
+            class="field-divided"
+            placeholder="Last"
+          />
+        </li>
+        <li>
+          <label>Email <span class="required">*</span></label>
+          <input type="email" name="email" class="field-long" />
+        </li>
+        <li>
+          <label>Subject</label>
+          <select name="subject" class="field-select">
+            <option value="Advertise">Advertise</option>
+            <option value="Partnership">Partnership</option>
+            <option value="General Question">General</option>
+          </select>
+        </li>
+        <li>
+          <label>Your Message <span class="required">*</span></label>
+          <textarea
+            name="message"
+            id="field5"
+            class="field-long field-textarea"
+          ></textarea>
+        </li>
+        <li>
+          <input type="button" value="Submit" id="submit" />
+        </li>
+      </ul>
+    </form>
+    <div>
+      <ul class="form-style-1">
+        <li id="first"></li>
+        <li id="last"></li>
+        <li id="email"></li>
+        <li id="subject"></li>
+        <li id="message"></li>
+      </ul>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
